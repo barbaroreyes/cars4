@@ -1,5 +1,21 @@
-.App {
-  text-align: center;
+.header-main{
+  margin: 7px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  border: 1px solid;
+}
+.menu-container{
+  width: 10%;
+}
+.logo-container{
+  width: 40%;
+}
+.search-container{
+  width: 10%;
+}
+.logo-container img{
+  width: 100%;
 }
 
 .App-logo {
