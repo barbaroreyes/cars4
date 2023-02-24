@@ -3,7 +3,7 @@
   display: flex;
   justify-content:space-between;
   align-items:center;
-  border: 1px solid;
+  border-bottom: 0.1px solid;
 }
 .menu-container{
   width: 10%;
