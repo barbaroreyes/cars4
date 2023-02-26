@@ -22,6 +22,7 @@ const Header = () => {
         <AiOutlineSearch/>
         <input type='search'/>
      </div>
+     
     </div>
   );
 }
