@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="header-main">
     
-     <div className='menu-container' ><AiOutlineMenuUnfold style={{width:"100%"}}/></div>
+     <div className='menu-container' ><AiOutlineMenuUnfold style={{width:"35px",fontSize:"30px"}}/></div>
      <div className='menu-container-long' >
         <a href = "#">Home</a>
         <a href = "#">Rides</a>
@@ -19,7 +19,7 @@ const Header = () => {
        
      </div>
      <div className='search-container' >
-        <AiOutlineSearch/>
+        
         <input type='search'/>
      </div>
      
