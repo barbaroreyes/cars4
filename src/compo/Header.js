@@ -16,7 +16,7 @@ const Header = () => {
      </div>
 
      < div className='logo-container'>
-       <img src ={Logo} alt= '' />
+       
      </div>
      <div className='search-container' >
         <AiOutlineSearch/>
