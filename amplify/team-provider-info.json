@@ -10,6 +10,11 @@
       "StackName": "amplify-cars4-dev-153115",
       "StackId": "arn:aws:cloudformation:us-east-1:217175807922:stack/amplify-cars4-dev-153115/66d151e0-bd2f-11ed-977a-12bebd4450e9",
       "AmplifyAppId": "d9iosenheu6c6"
+    },
+    "categories": {
+      "auth": {
+        "cars473870b5c": {}
+      }
     }
   }
 }

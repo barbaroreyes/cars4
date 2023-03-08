@@ -3,9 +3,18 @@ a{
   text-decoration:none ;
   color:#000000;
 }
-.header-main{
-  
-  
+main{
+ width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid;
+  margin: 20px;
+}
+main h1{
+  border: 1px solid;
+  font-size: 10px;
 }
 .search-container{
   width: 25%;
