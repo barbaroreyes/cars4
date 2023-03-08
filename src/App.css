@@ -81,8 +81,12 @@ a{
 .btn{
   width: 60%;
   border-radius: 10px;
-  height: 25px;
+  height: 30px;
   margin-bottom:123px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
