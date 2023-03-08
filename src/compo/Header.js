@@ -16,12 +16,13 @@ const Header = () => {
      </div>
 
      < div className='logo-container'>
-       
+     
+     
      </div>
-     <AiOutlineSearch style={{width:"25px",fontSize:"25px"}}/>
+     
      <div className='search-container' >
-        
-        <input type='search'/>
+     <AiOutlineSearch style={{width:"25px",fontSize:"25px"}}/>
+     <input type='search'/>
         
      </div>
      

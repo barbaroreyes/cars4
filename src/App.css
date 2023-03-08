@@ -99,15 +99,24 @@ a{
   width: 100%;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
+}.home-container-image1{
+  display: flex;
+  width: 30%;
 }
 .home-container-image{
   display: flex;
-  width: 30%;
+  width: 35%;
 }
 .home-container-image img{
   width: 100%;
   
+}.search-container{
+  width: 20%;
 }
+.search-container input{
+  width: 100%;
+  outline: aliceblue;
 }
   
 
@@ -118,4 +127,5 @@ a{
   to {
     transform: rotate(360deg);
   }
+}
 }
