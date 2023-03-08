@@ -1,7 +1,9 @@
 import {useState}from 'react';
 import {AiOutlineSearch  } from 'react-icons/ai';
 import {AiOutlineMenuUnfold} from 'react-icons/ai'
+import {Link} from 'react-router-dom'
 import Logo from './logo.png';
+
 const Header = () => {
   const [open ,setOpen] = useState(false)
   return (
@@ -23,7 +25,7 @@ const Header = () => {
      </div>
      
      <div className='search-container' >
-     login
+     <Link to='/login'>Login</Link>
      
         
      </div>
