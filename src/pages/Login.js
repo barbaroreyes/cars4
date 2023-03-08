@@ -10,13 +10,13 @@ Amplify.configure(awsExports);
 
 const Login = () => {
   return (
-    <Authenticator style={{margin:"50px"}}>
+    <Authenticator style={{background:"red"}}>
     {({ signOut, user }) => (
       <main>
       
-        <h1>Hello {user.username}</h1>
+        <h1>Hello {user.email}</h1>
         <button onClick={signOut}>Sign out</button>
-        <div>nav</div>
+        <Header/>
       </main>
     )}
   </Authenticator>

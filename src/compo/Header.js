@@ -19,16 +19,9 @@ const Header = () => {
         
      </div>
 
-     < div className='logo-container'>
+     <div className='logo-container'></div>
      
-     
-     </div>
-     
-     <div className='search-container' >
-     <Link to='/login'>Login</Link>
-     
-        
-     </div>
+     <div className='search-container'></div>
      
     </div>
   );
