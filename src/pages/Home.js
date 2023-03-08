@@ -10,6 +10,7 @@ const Home = () => {
       <div className='home-container-image'>
         <img src ={Picture} alt="pictur"/>
       </div>
+      <button className='btn'>book Now</button>
     </div>
   );
 }
