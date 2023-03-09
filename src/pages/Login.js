@@ -10,7 +10,8 @@ Amplify.configure(awsExports);
 
 const Login = () => {
   return (
-    <Authenticator style={{background:"red"}}>
+    <div className='login-container'>
+    <Authenticator >
     {({ signOut, user }) => (
       <main>
       
@@ -20,6 +21,7 @@ const Login = () => {
       </main>
     )}
   </Authenticator>
+  </div>
   );
 }
 
