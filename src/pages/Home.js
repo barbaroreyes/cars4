@@ -8,9 +8,11 @@ const Home = () => {
     <div className='home-container'>
       <div className='home-container-image1'>
         <img src ={Corona} alt="pictur"/>
+        
       </div>
       
       <button className='btn' onClick={()=> navigate('/login')}>Login</button>
+      <span>Popping Your Rides</span>
     </div>
   );
 }
