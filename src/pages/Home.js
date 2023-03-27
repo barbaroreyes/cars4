@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import Picture from '../portada.jpg'
-import Corona from '../corona.png'
+import Corona from '../corona.png';
+
 const Home = () => {
   const navigate = useNavigate()
     return (
@@ -9,9 +9,7 @@ const Home = () => {
       <div className='home-container-image1'>
         <img src ={Corona} alt="pictur"/>
       </div>
-      <div className='home-container-image'>
-        <img src ={Picture} alt="pictur"/>
-      </div>
+      
       <button className='btn' onClick={()=> navigate('/login')}>Login</button>
     </div>
   );
