@@ -3,6 +3,9 @@ a{
   text-decoration:none ;
   color:#000000;
 }
+.container{
+  display: flex;
+}
 .logo-container{
   
   
@@ -18,9 +21,16 @@ main h1{
   font-size: 10px;
 }
 .header-main{
+ width: 100%;
   border: 1px solid;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-items : center;
+}
+.formContainer{
+  display: flex;
+  justify-content:center;
 }
 .search-container{
   width: 25%;
@@ -31,14 +41,15 @@ main h1{
  
   
 }.login-container{
-  width:  99%;
-  padding: 30px;
-  border: 1px solid;
-}
-
-.search-container input{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   
 }
+
+
 .menu-container{
   width: 10%;
 }

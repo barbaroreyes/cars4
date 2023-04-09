@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { withAuthenticator } from '@aws-amplify/ui-react';
+
 import {Amplify} from "aws-amplify";
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -15,12 +15,14 @@ const Login = () => {
     {({ signOut, user }) => (
       <main>
       
-        <h1>Hello {user.email}</h1>
+        <h1>Hello {user.name}</h1>
         <button onClick={signOut}>Sign out</button>
         <Header/>
+        
       </main>
     )}
   </Authenticator>
+  <div>services</div>
   </div>
   );
 }

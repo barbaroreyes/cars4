@@ -11,7 +11,7 @@ const Home = () => {
         
       </div>
       
-      <button className='btn' onClick={()=> navigate('/login')}>Login</button>
+      <button className='btn' onClick={()=> navigate('/form')}>Booking Now</button>
       <span>Popping Your Rides</span>
     </div>
   );

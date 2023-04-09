@@ -21,7 +21,7 @@ const Header = () => {
 
      <div className='logo-container'></div>
      
-     <div className='search-container'></div>
+     <div className='search-container'>search</div>
      
     </div>
   );
