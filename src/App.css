@@ -79,6 +79,7 @@ form{
 }
 .search-container{
   width: 10%;
+  font-family:cursive
 }
 .logo-container img{
   width: 100%;
@@ -128,15 +129,16 @@ form{
   border-radius: 10px;
   height: 30px;
   margin-bottom:53px;
-  padding: 18px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
   color:#fff;
   border-radius: 40px;
-  font-size:20px;
-  font-family:cursive
+  font-size:25px;
+  font-family:cursive;
+  height: 50px;
 }
 
 
