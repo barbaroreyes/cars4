@@ -10,12 +10,17 @@ const Header = () => {
     <div className="header-main">
     
      <div className='menu-container' onClick={()=> console.log("hello")}><AiOutlineMenuUnfold style={{width:"35px",fontSize:"30px"}}/>
+     <Link to = "/">Home</Link>
+        <Link to = "/rides">Rides</Link>
+        <Link to = "/services">Services</Link>
+        <Link to = "/contact">Contact</Link>
      </div>
+       
      <div className='menu-container-long' >
-        <a href = "#">Home</a>
-        <a href = "#">Rides</a>
-        <a href = "#">Services</a>
-        <a href = "#">Contact</a>
+     <Link to = "/">Home</Link>
+        <Link to = "/rides">Rides</Link>
+        <Link to = "/services">Services</Link>
+        <Link to = "/contact">Contact</Link>
         
      </div>
 

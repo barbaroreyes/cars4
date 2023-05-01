@@ -123,6 +123,44 @@ form{
 .home-container-image img{
   width: 100%;
   
+}.container .rides{
+ 
+  
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}.ride{
+  border:1px solid black;
+  width: 100%;
+  margin: 30px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+
+}.services{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}.service{
+  border:1px solid black;
+  width: 100%;
+  margin: 30px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
 }
 .btn{
   width: 73%;
@@ -164,6 +202,7 @@ form{
    font-size: 35px;
    border-radius: 100px
   }
+
   .logo-container{
   width: 19%;
 }.menu-container{
