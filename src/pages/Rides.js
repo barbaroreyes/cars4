@@ -2,10 +2,10 @@ import React from 'react';
 
 const Rides = () => {
   return (
-    <div className='container'>
+    <div className='containers'>
       <div className='rides'>
         <div className='ride'>
-            <span>Ride-Name</span>
+            <span>Reserve</span>
         </div>
         <div className='ride'>
             <span>Ride-Name</span>

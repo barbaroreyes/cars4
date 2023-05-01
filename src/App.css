@@ -5,8 +5,16 @@ a{
 }
 .container{
   display: flex;
+ flex-direction: column;
+align-items: center;
 }
-
+.containers{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ border: 1px solid black;
+ width: 100%;
+}
 main{
  width: 100%;
   display: flex;
@@ -123,44 +131,25 @@ form{
 .home-container-image img{
   width: 100%;
   
-}.container .rides{
- 
-  
-  flex-wrap: wrap;
+}
+.rides{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
 
 }.ride{
+  width: 90%;
+  height: 200px;
   border:1px solid black;
-  width: 100%;
-  margin: 30px;
-  height: 220px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-radius: 40px;
-
-}.services{
-  width: 100%;
-  flex-wrap: wrap;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}.service{
-  border:1px solid black;
-  width: 100%;
-  margin: 30px;
-  height: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40px;
+  margin: 15px;
+  border-radius: 20px;
 }
 .btn{
   width: 73%;
@@ -191,6 +180,9 @@ form{
     align-items:center;
     height: 100vh;
    
+  }.riders{
+    display: flex;
+   flex-direction:row ;
   }
   .header-main{
     width: 80%;
