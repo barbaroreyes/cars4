@@ -1,27 +1,21 @@
-import React from 'react';
+import {useContext} from 'react';
+import {ServiceContext} from '../context/servicesContext'
 
 const Services = () => {
+    const services = useContext(ServiceContext)
+    console.log(services)
   return (
     <div className='containers'>
         <div className='rides'>
-        <div className='ride'>
-            <span>AirPort_PickUp</span>
-        </div>
-        <div className='ride'>
-            <span>Party</span>
-        </div>
-        <div className='ride'>
-            <span>Event</span>
-        </div>
-        <div className='ride'>
-            <span>Dropp_Off</span>
-        </div>
-        <div className='ride'>
-            <span>Tours</span>
-        </div>
-        <div className='ride'>
-            <span>Servics-Name</span>
-        </div>
+            {services.map((item,i)=> {
+            return (<div className='ride'>
+                       <span>{item.name}</span>
+                        </div>
+       
+                )
+            })}
+        
+       
       </div>
     </div>
   );
