@@ -5,8 +5,8 @@ import './search.css'
 const Search = () => {
   return (
     <div className="search">
-        <input type='text' placeholder='Search a category'/>
-      <IoIosSearch  />
+        <input type='text' placeholder='Type a service'/>
+      <IoIosSearch  fontSize={18}/>
     </div>
   );
 }

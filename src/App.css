@@ -41,7 +41,7 @@ main h1{
 .header-main{
  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   height: 10vh;
  

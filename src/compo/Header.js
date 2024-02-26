@@ -11,8 +11,9 @@ const Header = () => {
     <div className="header-main">
     
     <Nav/>
+   <Search/>
    
-   
+   <>Login</>
     
     </div>
   );
