@@ -6,10 +6,7 @@ const Home = () => {
   const navigate = useNavigate()
     return (
     <div className='home-container'>
-      <div className='home-container-image1'>
-        <img src ={Corona} alt="pictur"/>
-        
-      </div>
+      
       <divclas>
         <h1>Categories</h1>
         <div>
