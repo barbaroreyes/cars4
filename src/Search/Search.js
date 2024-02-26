@@ -1,9 +1,10 @@
 import React from 'react';
+import { IoIosSearch } from "react-icons/io";
 
 const Search = () => {
   return (
     <div>
-      Search
+      <IoIosSearch  fontSize={30}/>
     </div>
   );
 }
