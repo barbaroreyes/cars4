@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <div className="search">
         <input type='text' placeholder='Search a category'/>
-      <IoIosSearch fontSize={15} />
+      <IoIosSearch  />
     </div>
   );
 }
