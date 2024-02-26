@@ -10,8 +10,21 @@ const Home = () => {
         <img src ={Corona} alt="pictur"/>
         
       </div>
-      
-      <button className='btn' onClick={()=> navigate('/form')}>Booking Now</button>
+      <divclas>
+        <h1>Categories</h1>
+        <div>
+          <div>
+            <h4>categoriaNmae1</h4>
+            <img src='' alt ='pict'/>
+            <p>lorem203</p>
+            </div>
+        </div>
+        </divclas>
+      <button className='btn' 
+      onClick={()=> 
+      navigate('/form')}>
+      Booking Now
+      </button>
       <span>Popping Your Rides</span>
     </div>
   );

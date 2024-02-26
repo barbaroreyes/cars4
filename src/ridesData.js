@@ -21,3 +21,10 @@ export const users = [
     {"id":"4", "name":"Pepe4"},
     {"id":"5", "name":"Pepe5"}
 ]
+
+export const driver =[
+    {"name": "peped1"},
+    {"name": "peped2"},
+    {"name": "peped3"},
+    {"name": "peped4"},
+]
