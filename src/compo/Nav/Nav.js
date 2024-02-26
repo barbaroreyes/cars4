@@ -4,7 +4,7 @@ import './nav.css'
 const Nav = () => {
   return (
     <div className='navigation'>
-      <IoIosMenu fontSize={25} />
+      <IoIosMenu fontSize={45} />
     </div>
   );
 }
