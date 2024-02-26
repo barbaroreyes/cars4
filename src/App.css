@@ -44,7 +44,7 @@ main h1{
   justify-content: space-around;
   align-items: center;
   height: 18vh;
-  border: 1px solid black; 
+ 
 }
 .menu-container{
   width: 10%;
@@ -109,11 +109,17 @@ form{
   align-items: center;
 }
 .home-container{
- width: 100%;
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.home_image_container{
+  width: 90%;
+}
+.home_image_container img{
+  width: 100%;
 }
 .home-container-image1{
   display: flex;
