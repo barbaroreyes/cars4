@@ -39,11 +39,11 @@ main h1{
 
 /* ==========================Styles Menu===========================*/
 .header-main{
- width: 100%;
+ width: 85%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: 15vh;
  
 }
 .menu-container{
