@@ -8,8 +8,12 @@ const Logo = () => {
   return (
     <div className='logo_container'>
       
+      
+      <Link to='/login'>
+        
       <img src = {logo} alt ='' />
-      <Link to='/login'>Login</Link>
+      
+      </Link>
     </div>
   );
 }
