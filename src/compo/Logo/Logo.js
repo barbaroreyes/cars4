@@ -9,7 +9,7 @@ const Logo = () => {
     <div className='logo_container'>
       
       <img src = {logo} alt ='' />
-      <Link to='/'>Login</Link>
+      <Link to='/login'>Login</Link>
     </div>
   );
 }
