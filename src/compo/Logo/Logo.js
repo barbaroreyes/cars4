@@ -9,7 +9,7 @@ const Logo = () => {
     <div className='logo_container'>
       
       
-      <Link to='/login'>
+      <Link to='/'>
         
       <img src = {logo} alt ='' />
       
