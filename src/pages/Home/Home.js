@@ -26,9 +26,9 @@ const Home = () => {
      <Link to='/form' className='btn btn-primary'>Sign In </Link>
      <Link to='/form' className='btn btn-primary'>Sign Up</Link>
      </div>
-      
-       
      <span>Popping Your Rides</span>
+
+     <div></div>
     </div>
   );
 }
