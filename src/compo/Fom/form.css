@@ -31,6 +31,7 @@ form input{
      width: 50%;
      border: none;
      font-size: 20px;
+     color: #0c1b6d;
 }
 @media (min-width: 768px){
     form input{
