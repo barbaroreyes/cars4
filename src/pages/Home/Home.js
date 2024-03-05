@@ -18,19 +18,16 @@ const Home = () => {
         <div className='welcome'>
         <span>Welcome to</span>
        <span>Reyes Luxury Cars</span>
+       
        </div>
+       <p>Get a ride in minutes Or become a driver.</p>
        <div className = " btn-container">
      <Link to='/form' className='btn btn-primary'>Book now</Link>
      <Link to='/form' className='btn btn-primary'>Sign In </Link>
      <Link to='/form' className='btn btn-primary'>Sign Up</Link>
      </div>
       
-       <p>Get a ride in minutes Or become a driver.</p>
        
-    
-     
-   
-     
      <span>Popping Your Rides</span>
     </div>
   );

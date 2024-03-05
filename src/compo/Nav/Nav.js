@@ -11,12 +11,11 @@ const Nav = () => {
         </div>
      
       <div className='nav-log'>
-       <Link to='/'>About</Link>
        <Link to='/'>Services</Link>
        <Link to='/'>Fleet</Link>
        <Link to='/'>Events</Link>
        <Link to='/'>Reserve</Link>
-       <Link to='/'>Book Instantly</Link>
+       <Link to='/book_now'>Book Instantly</Link>
       </div>
     </div>
   );
