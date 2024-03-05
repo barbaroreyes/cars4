@@ -6,7 +6,7 @@ type  Booked @model @auth(rules: [{ allow: public, operations: [read] }, { allow
   id: ID!
   name: String!
   last:String!
-  email:"",!
+  email: String!
   phone: Int
   addressPickUp: String!
   addressDropeOff: String!
