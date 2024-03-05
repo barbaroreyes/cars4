@@ -11,8 +11,11 @@
     width: 100%;
     padding: 3px;
   }.home-container p{
-    padding: 35px;
+    padding: 25px;
     font-size: 15px;
+    font-style: inherit;
+    font-family:cursive;
+    color: #536dfe;
   }
 
   .one{
@@ -34,7 +37,7 @@
     
   }.welcome span{
     font-size:31px;
-    color: #4F4F96;
+    color: #3434b1;
   }
   
   
@@ -57,7 +60,11 @@
     padding: 5px ;
     border-radius: 10px;
     background-color:#4F4F96;
-    color:#e7e7ee
+    color:#FFFF
+  }
+  .home-container span{
+    font-size:31px;
+    color: #3434b1;
   }
 
   @media (min-width: 768px){
