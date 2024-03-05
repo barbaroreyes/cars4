@@ -1,7 +1,7 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import {Link} from 'react-router-dom'
-import Corona from '../../home1.png';
+import Corona from '../../home1.webp';
 import Corona1 from '../../ride.png';
 import './home.css'
 
@@ -22,7 +22,7 @@ const Home = () => {
        </div>
        <p>Get a ride in minutes Or become a driver.</p>
        <div className = " btn-container">
-     <Link to='/form' className='btn btn-primary'>Book now</Link>
+     <Link to='/form' className='btn btn-primary'>Book Instantly</Link>
      <Link to='/form' className='btn btn-primary'>Sign In </Link>
      <Link to='/form' className='btn btn-primary'>Sign Up</Link>
      </div>
