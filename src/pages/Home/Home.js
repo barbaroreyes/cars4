@@ -25,7 +25,8 @@ const Home = () => {
      <Link to='/form' className='btn btn-primary'>Sign Up</Link>
      </div>
       
-       <p>Get a ride in minutes.Or become a driver and earn money on your schedule.</p>
+       <p>Get a ride in minutes Or become a driver.</p>
+       
     
      
    
