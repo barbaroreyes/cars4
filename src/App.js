@@ -1,6 +1,6 @@
 import {Routes ,Route} from 'react-router-dom'
 import './App.css';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Form from './compo/Fom/Form';
 import Header from './compo/Header';
 import Rides from './pages/Rides'
@@ -8,8 +8,8 @@ import Services from './pages/Services';
 
 function App() {
   return (
-    <div className='container'>
-      <Header/>
+    <>
+    <Header/>
     <Routes>
     <Route path="/" element ={<Home/>}/>
     <Route path="/rides" element ={<Rides />}/>
@@ -17,7 +17,7 @@ function App() {
     <Route path="/form" element ={<Form />}/>
 
     </Routes>
-    </div>
+    </>
     
   );
 }

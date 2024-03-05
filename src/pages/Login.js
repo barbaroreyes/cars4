@@ -17,7 +17,7 @@ const Login = () => {
       
         <h1>Hello {user.name}</h1>
         <button onClick={signOut}>Sign out</button>
-        <Header/>
+        
         
       </main>
     )}

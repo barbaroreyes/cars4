@@ -1,14 +1,14 @@
 import Logo from './Logo/Logo';
-import  Navbar from './Nav/Nav';
+import  Nav from './Nav/Nav';
 
 
 const Header = () => {
   
   return (
     <div className="header-main">
-    
-    <Navbar/> 
     <Logo/>
+    <Nav/> 
+    
     
     </div>
   );

@@ -1,13 +1,22 @@
 import React from 'react';
+import {Link} from  'react-router-dom'
 import { IoIosMenu } from "react-icons/io";
 import './nav.css'
 
 const Nav = () => {
   return (
     <div className='navigation'>
+      <div className='short'>
       <IoIosMenu fontSize={45} />
+        </div>
+     
       <div className='nav-log'>
-       <a>Home</a>
+       <Link to='/'>About</Link>
+       <Link to='/'>Services</Link>
+       <Link to='/'>Fleet</Link>
+       <Link to='/'>Events</Link>
+       <Link to='/'>Reserve</Link>
+       <Link to='/'>Book Instantly</Link>
       </div>
     </div>
   );

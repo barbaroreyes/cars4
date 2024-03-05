@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  background-color: #F7F7FC;
+}
 a{
   text-decoration:none ;
  
 }
 
 
-.container{
-  display: flex;
- flex-direction: column;
- justify-content: center;
-align-items: center;
-}
 .containers{
  display: flex;
   flex-direction: column;
@@ -35,9 +32,10 @@ span{
 
 /* ==========================Styles Menu===========================*/
 .header-main{
- width: 100%;
+ width: 80%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding: 10px;
   align-items: center;
   margin-top: 40px;
  
@@ -46,7 +44,7 @@ span{
   width: 10%;
 }
 .logo-container{
-  width: 40%;
+ display: none;
 }
 .search-container{
   width: 25%;
@@ -104,39 +102,9 @@ form{
   justify-content: space-around;
   align-items: center;
 }
-.home-container{
- display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-}
-.home-container span{
-  text-align: center;
-  width: 100%;
-  padding: 3px;
-}
-.one{
-  width: 27.3%;
-  margin: 3px;
-  object-fit: cover;
-}
-.services{
-  display: flex;
-}
-.home_image_container img{
-  width: 100%;
-  height: 20vh;
-  border-radius : 10px;
-}
 
 
 
-
-.home-container-image img{
-  width: 100%;
-  
-}
 .rides{
   width: 100%;
   display: flex;
@@ -156,57 +124,30 @@ form{
   margin: 15px;
   border-radius: 20px;
 }
-.btn{
-  width: 73%;
-  border-radius: 10px;
-  height: 30px;
-  margin-bottom:53px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color:#fff;
-  border-radius: 40px;
-  font-size:25px;
-  font-family:cursive;
-  height: 50px;
-}
+
 
 
 @media (min-width: 768px){
   .header-main{
-     width: 100%;
-     flex-direction: row;
-    justify-content: space-around;
+     width: 90%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin-top: 0;
+    background-color: #F7F7FC
+    
    
-   color: rgb(24, 5, 5);
-   font-size: 15px;
-   border-radius: 20px
   }
 
-.home-container{
-  width: 60%;
- 
-}.home-container span{
+
+.btn-container{
   width: 100%;
-  
-}
-.home_image_container{
-  margin: 20px;
- 
-}.home_image_container img{
-  width: 100%;
-  border-radius: 20px
 }
 .btn{
   width: 26%;
   background-color: black;
   color:#fff;
   border-radius: 40px;
-  height:50px ;
+
 }
 
 
