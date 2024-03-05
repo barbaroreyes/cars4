@@ -58,11 +58,11 @@ const Form = () => {
          />
        <input type="address"
         name="addressPickUp" 
-        placeholder="Address PickUp" 
+        placeholder="Pick Up Location" 
          onChange={handleChange}/>  
       <input type="address"
        name="addressDropeOff"
-        placeholder="Address Drope Off"
+        placeholder="Drop-Off Location"
          onChange={handleChange}
          /> 
       <div class="select">
@@ -76,9 +76,9 @@ const Form = () => {
     <label for="cars">Type:</label>
     <select name="type" id="type"
      onChange={handleChange}>
-      <option value="xt5">Sedan</option>
-      <option value="SUV">SUV</option>
-      <option value="SUV LUX">SUV Luxury</option>
+      <option value="sedan">Sedan</option>
+      <option value="suv">SUV</option>
+      <option value="suv_lux">SUV Luxury</option>
 
     </select>
       </div>
