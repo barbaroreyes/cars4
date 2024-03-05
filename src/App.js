@@ -5,6 +5,7 @@ import Form from './compo/Fom/Form';
 import Header from './compo/Header';
 import Rides from './pages/Rides'
 import Services from './pages/Services';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Header/>
     <Routes>
     <Route path="/" element ={<Home/>}/>
+    <Route path="/signIn" element ={<Login/>}/>
     <Route path="/rides" element ={<Rides />}/>
     <Route path="/services" element ={<Services/>}/>
     <Route path="/form" element ={<Form />}/>

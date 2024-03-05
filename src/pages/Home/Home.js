@@ -23,8 +23,8 @@ const Home = () => {
        <p>Get a ride in minutes Or become a driver.</p>
        <div className = " btn-container">
      <Link to='/form' className='btn btn-primary'>Book Instantly</Link>
-     <Link to='/' className='btn btn-primary'>Sign In </Link>
-     <Link to='/' className='btn btn-primary'>Sign Up</Link>
+     <Link to='/signIn' className='btn btn-primary'>Sign In </Link>
+     
      </div>
      <span>Popping Your Rides</span>
 
