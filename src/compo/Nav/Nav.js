@@ -11,7 +11,7 @@ const Nav = () => {
         </div>
      
       <div className='nav-log'>
-       <Link to='/'>Services</Link>
+       <Link to='/services'>Services</Link>
        <Link to='/'>Fleet</Link>
        <Link to='/'>Events</Link>
        <Link to='/'>Reserve</Link>

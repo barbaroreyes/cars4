@@ -13,6 +13,12 @@
     .nav-log a{
         margin: 10px;
         font-style: inherit;
-        font-family:cursive
+        font-family:cursive;
+        color: rgb(64, 31, 7)
+        
     }
+}
+
+.nav-log a:hover{
+    text-decoration: underline;
 }

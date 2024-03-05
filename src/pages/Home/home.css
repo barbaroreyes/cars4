@@ -15,7 +15,7 @@
     font-size: 22.4px;
     font-style: inherit;
     font-family:cursive;
-    color: #536dfe;
+    color: rgb(208, 171, 144);
   }
 
   .one{
@@ -37,7 +37,7 @@
     
   }.welcome span{
     font-size:31px;
-    color: #3434b1;
+    color: rgb(102,105,118);
   }
   
   
@@ -59,12 +59,12 @@
     text-align: center;
     padding: 5px ;
     border-radius: 10px;
-    background-color:#4F4F96;
+    background-color:rgb(195,128,81);
     color:#FFFF
   }
   .home-container span{
     font-size:31px;
-    color: #3434b1;
+    color: rgb(97, 44, 7);
   }
 
   @media (min-width: 768px){

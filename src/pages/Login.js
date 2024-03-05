@@ -1,30 +1,19 @@
-import React from 'react';
-
-
-import {Amplify} from "aws-amplify";
-import { Authenticator } from '@aws-amplify/ui-react';
+import {Amplify } from 'aws-amplify';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-import awsExports from "../aws-exports";
+import config from '../amplifyconfiguration.json';
+import Services from './Services';
+import Rides from './Rides';
+Amplify.configure(config);
 
-Amplify.configure(awsExports);
-
-const Login = () => {
+function Login({ signOut, user }) {
   return (
-    <div className='login-container'>
-    <Authenticator >
-    {({ signOut, user }) => (
-      <main>
-      
-        <h1>Hello {user.name}</h1>
-        <button onClick={signOut}>Sign out</button>
-        
-        
-      </main>
-    )}
-  </Authenticator>
-  
-  </div>
+    <>
+      <h1>Hello {user.name}</h1>
+      <button onClick={signOut}>Sign out</button>
+      <Services/>
+    </>
   );
 }
 
-export default Login;
+export default withAuthenticator(Login);

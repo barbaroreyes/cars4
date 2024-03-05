@@ -1,7 +1,6 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
 import {Link} from 'react-router-dom'
-import Corona from '../../home1.webp';
+import Corona from '../../home.webp';
 
 import './home.css'
 
@@ -16,8 +15,8 @@ const Home = () => {
        <div className='home_image_container'>
         <img src={Corona} alt='pic'/></div>
         <div className='welcome'>
-        <span>Welcome to</span>
-       <span>Reyes Luxury Cars</span>
+        <span>Welcome</span>
+      
        
        </div>
        <p>Get a ride in minutes Or become a driver.</p>
