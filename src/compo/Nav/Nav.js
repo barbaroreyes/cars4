@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className='navigation'>
       <div className='short'>
-      <IoIosMenu fontSize={45} />
+      <IoIosMenu fontSize={45} color=' #1a237e'/>
         </div>
      
       <div className='nav-log'>
