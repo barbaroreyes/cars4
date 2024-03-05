@@ -130,10 +130,13 @@ form{
 @media (min-width: 768px){
   .header-main{
      width: 90%;
+     height: 10vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #F7F7FC
+    background-color: #F7F7FC;
+   
+    
     
    
   }

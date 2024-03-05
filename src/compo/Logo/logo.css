@@ -23,11 +23,11 @@
       flex-direction: row-reverse;
       justify-content: center;
       align-items: center;
-      width: 35%;
+      width: 20%;
     } .logo_container img{
-      width: 30%;
+      width: 25%;
       border-radius:50%;
-      margin: 3px;
+      margin: 5px;
       
     }
   }
