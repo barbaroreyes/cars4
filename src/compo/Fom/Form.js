@@ -1,6 +1,9 @@
 import {useState}  from 'react';
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
+import axios from 'axios';
 import './form.css'
+
+
 const Form = () => {
   const initialState= {
     name :"",
@@ -16,22 +19,30 @@ const Form = () => {
 
   }
   const navigation = useNavigate()
-  const [book , setBook] = useState(initialState);
+  const [newBooking , setBooking] = useState(initialState);
 
   const handleChange = (e) => {
-    setBook((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setBooking((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     
   };
-  const  handleClick = (e) => {
+  const  handleClick = async (e) => {
     e.preventDefault();
+  try {
+     await axios.post("https://7l4tx89are.execute-api.us-east-1.amazonaws.com/Prod/createBooking",{
+      name:newBooking,
 
-    setBook(initialState);
-    console.log("Ride Booked")
-    navigation('/')
+     })
+     setBooking(initialState);
+     console.log("Ride Booked")
+     navigation('/')
+  } catch (error) {
+    console.log(error)
+  }
+   
 
   }
 
-  console.log("book",book)
+  console.log("booking",newBooking)
   return (
     <form>
         
