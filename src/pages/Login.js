@@ -2,6 +2,7 @@ import {Amplify } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import config from '../amplifyconfiguration.json';
+
 import Services from './Services';
 import Rides from './Rides';
 Amplify.configure(config);
