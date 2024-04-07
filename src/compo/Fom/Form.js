@@ -5,87 +5,138 @@ import './form.css'
 
 
 const Form = () => {
-  const initialState= {
-    name :"",
-    email:"",
-    pickupLocation:"",
-    dropoffLocation:"",
-    passagers:"",
-    rideType:"",
-    distance:"",
-    price : "",
 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    pickupLocation: '',
+    pickupDate: '',
+    time: '',
+    dropoffLocation: '',
+    passagers: '',
+    rideType: '',
+    price:"",
+    distance:""
 
+});
 
-  }
-  const navigation = useNavigate()
-  const [newBooking , setBooking] = useState(initialState);
+const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+};
 
-  const handleChange = (e) => {
-    setBooking((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    
-  };
-  const  handleClick = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
-  
-   
-   console.log("hello",newBooking)
-  }
-
-  console.log("booking",newBooking)
-  return (
-    <form>
+    // Send form data to backend
+    try {
+        const response = await axios.post('http://localhost:4500/api/bookings', formData);
+        console.log('Booking created:', response.data);
         
-      <h1>Book Instantly</h1>
-      <input type="text" 
-      name="name" 
-      placeholder="Name" 
-       onChange={handleChange}
-       />
-      
-      <input type="email" 
-      name="email" 
-      placeholder="Email" 
-      onChange={handleChange}
-      />
-       
-       <input type="address"
-        name="pickupLocation" 
-        placeholder="Pick Up Location" 
-         onChange={handleChange}/>  
-      <input type="address"
-       name="dropoffLocation"
-        placeholder="Drop-Off Location"
-         onChange={handleChange}
-         /> 
-      <div class="select">
-      <label for="cars">Passagers:</label>
-    <select name="passagers"
-     id="passagers" 
-     onChange={handleChange}>
-      <option value="1-4">1-4</option>
-      <option value="4-6">4-6</option>
-    </select>
-    <label for="cars">Type:</label>
-    <select name="rideType" id="type"
-     onChange={handleChange}>
-      <option value="sedan">Sedan</option>
-      <option value="suv">SUV</option>
-      <option value="suv_lux">SUV Luxury</option>
+    } catch (error) {
+        console.error('Error creating booking:', error);
+    }
 
-    </select>
-      </div>
-     
-          <div className = "btn-container" >
-          <button type="submit" 
-           className ="btn btn-primary"
-           name="submit"
-           onClick={handleClick}
-           >Book</button>
-          </div>
-          
-    </form>
-  );
+    console.log(formData);
+};
+
+return (
+    <div>
+        <h2>Book a Ride</h2>
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+            />
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+            />
+            <input
+                type="text"
+                name="pickupLocation"
+                placeholder="Pickup Location"
+                value={formData.pickupLocation}
+                onChange={handleChange}
+                required
+            />
+             <label>Date</label>
+             <input
+                type="date"
+                name="pickupDate"
+                placeholder="Dropoff Location"
+                value={formData.pickupDate}
+                onChange={handleChange}
+                required
+            />
+             <label>Hour</label>
+             <input
+                type="time"
+                name="time"
+                placeholder="time"
+                value={formData.time}
+                onChange={handleChange}
+                required
+            />
+            <input
+                type="text"
+                name="dropoffLocation"
+                placeholder="Dropoff Location"
+                value={formData.dropoffLocation}
+                onChange={handleChange}
+                required
+            />
+           
+             <input
+                type="number"
+                name="passagers"
+                placeholder="passagers"
+                value={formData.passagers}
+                onChange={handleChange}
+                required
+            />
+                  <label>select your booking type</label>
+            <select 
+            name='passagers'
+            onChange={handleChange}se
+            value={formData.passagers}
+            >
+              <option value= "1-4">1-4</option>
+                <option value= "4-6">4-6</option>
+                <option value= "6-10">6-10</option>
+                <option value= "10-15">10-15</option>
+                <option value= "more_then_15">15+</option>
+                </select>
+           
+
+            <label>select your booking type</label>
+            <select 
+            name='rideType'
+            onChange={handleChange}se
+            value={formData.rideType}
+            >
+              <option value= "luxury">Luxury</option>
+                <option value= "luxury_44">Luxury44</option>
+                <option value="luxury_46">Luxury46</option>
+                <option value="luxury_small_limo">Luxury  Small Limo</option>
+                <option value="luxury_big_limo">Luxury Big Limo</option>
+                </select>
+
+            <button 
+            type="submit"
+            calassName="btn btn-primary"
+            >
+            Booking Now
+            </button>
+        </form>
+    </div>
+);
 }
 
 export default Form;
