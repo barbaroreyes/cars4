@@ -7,13 +7,13 @@ import './form.css'
 const Form = () => {
   const initialState= {
     name :"",
-    last : "",
     email:"",
-    phone:"",
-    addressPickUp:"",
-    addressDropeOff:"",
+    pickupLocation:"",
+    dropoffLocation:"",
     passagers:"",
-    type:"",
+    rideType:"",
+    distance:"",
+    price : "",
 
 
 
@@ -25,21 +25,11 @@ const Form = () => {
     setBooking((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     
   };
-  const  handleClick = async (e) => {
+  const  handleClick = (e) => {
     e.preventDefault();
-  try {
-     await axios.post("https://7l4tx89are.execute-api.us-east-1.amazonaws.com/Prod/createBooking",{
-      name:newBooking,
-
-     })
-     setBooking(initialState);
-     console.log("Ride Booked")
-     navigation('/')
-  } catch (error) {
-    console.log(error)
-  }
+  
    
-
+   console.log("hello",newBooking)
   }
 
   console.log("booking",newBooking)
@@ -52,27 +42,19 @@ const Form = () => {
       placeholder="Name" 
        onChange={handleChange}
        />
-      <input type="text" 
-      name="last" 
-      placeholder="LastName"
-       onChange={handleChange}
-       />
+      
       <input type="email" 
       name="email" 
       placeholder="Email" 
       onChange={handleChange}
       />
-       <input type="number"
-        name="phone"
-         placeholder="Phone" 
-         onChange={handleChange}
-         />
+       
        <input type="address"
-        name="addressPickUp" 
+        name="pickupLocation" 
         placeholder="Pick Up Location" 
          onChange={handleChange}/>  
       <input type="address"
-       name="addressDropeOff"
+       name="dropoffLocation"
         placeholder="Drop-Off Location"
          onChange={handleChange}
          /> 
@@ -85,7 +67,7 @@ const Form = () => {
       <option value="4-6">4-6</option>
     </select>
     <label for="cars">Type:</label>
-    <select name="type" id="type"
+    <select name="rideType" id="type"
      onChange={handleChange}>
       <option value="sedan">Sedan</option>
       <option value="suv">SUV</option>
