@@ -4,21 +4,23 @@ import axios from 'axios';
 import './form.css'
 
 
+const initial ={
+  name: '',
+  email: '',
+  pickupLocation: '',
+  pickupDate: '',
+  time: '',
+  dropoffLocation: '',
+  passagers: '',
+  rideType: '',
+  price:"",
+  distance:""
+
+}
+ 
 const Form = () => {
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    pickupLocation: '',
-    pickupDate: '',
-    time: '',
-    dropoffLocation: '',
-    passagers: '',
-    rideType: '',
-    price:"",
-    distance:""
-
-});
+   const navigation = useNavigate()
+  const [formData, setFormData] = useState(initial);
 
 const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,8 +31,11 @@ const handleSubmit = async (e) => {
     // Send form data to backend
     try {
         const response = await axios.post('http://localhost:4500/api/bookings', formData);
+       
+        setFormData(initial)
+        navigation('/');
         console.log('Booking created:', response.data);
-        
+
     } catch (error) {
         console.error('Error creating booking:', error);
     }
@@ -92,16 +97,8 @@ return (
                 onChange={handleChange}
                 required
             />
-           
-             <input
-                type="number"
-                name="passagers"
-                placeholder="passagers"
-                value={formData.passagers}
-                onChange={handleChange}
-                required
-            />
-                  <label>select your booking type</label>
+    
+          <label>How Many Passagers?</label>
             <select 
             name='passagers'
             onChange={handleChange}se
