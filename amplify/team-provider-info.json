@@ -9,7 +9,25 @@
       "UnauthRoleName": "amplify-cars4-dev-91459-unauthRole",
       "StackName": "amplify-cars4-dev-91459",
       "StackId": "arn:aws:cloudformation:us-east-1:217175807922:stack/amplify-cars4-dev-91459/38f6cdc0-f4e9-11ee-9e15-0affcd86c0fd",
-      "AmplifyAppId": "d332q8u7ihf9x5"
+      "AmplifyAppId": "d332q8u7ihf9x5",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cars4-dev-91459-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "cars4cd400b9e": {
+          "deploymentBucketName": "amplify-cars4-dev-91459-deployment",
+          "s3Key": "amplify-builds/cars4cd400b9e-43332b764a2b5469626d-build.zip"
+        }
+      },
+      "auth": {
+        "cars4": {}
+      },
+      "storage": {
+        "dynamoff513599": {}
+      },
+      "api": {
+        "api4459371a": {}
+      }
     }
   }
 }

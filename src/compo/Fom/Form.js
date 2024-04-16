@@ -30,7 +30,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
     // Send form data to backend
     try {
-        const response = await axios.post('http://localhost:4500/api/bookings', formData);
+        const response = await axios.post('https://3i264o30id.execute-api.us-east-1.amazonaws.com/Prod/bookings', formData);
        
         setFormData(initial)
         navigation('/');
