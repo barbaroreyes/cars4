@@ -30,7 +30,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Send form data to backend
-    await axios.post("http://localhost:4500/api/bookings", formData);
+    await axios.post('https://luxuryapp.vercel.app/api/bookings', formData);
     navigation("/");
     console.log(formData);
   };
